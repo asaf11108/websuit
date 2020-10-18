@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { I18nModule } from './i18n/i18n.module';
+import { SelectLanguageComponent } from './select-language/select-language.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SelectLanguageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
