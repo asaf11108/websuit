@@ -1,6 +1,5 @@
 import { Inject, NgModule } from '@angular/core';
 import { makeStateKey, TransferState } from '@angular/platform-browser';
-import { ServerTransferStateModule } from '@angular/platform-server';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Request } from 'express';
@@ -13,7 +12,8 @@ import { Observable, of } from 'rxjs';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: translateFSLoaderFactory
+        useFactory: translateFSLoaderFactory,
+        deps: [TransferState]
       }
     })
   ]
@@ -28,19 +28,23 @@ export class I18nServerModule {
 }
 
 export class TranslateFSLoader implements TranslateLoader {
-  constructor(private prefix = 'i18n', private suffix = '.json') { }
+  constructor(
+    // ADDED: inject the transferState service
+    private transferState: TransferState,
+    private prefix = '/i18n',
+    private suffix = '.json'
+  ) { }
 
-  /**
-   * Gets the translations from the server, store them in the transfer state
-   */
   public getTranslation(lang: string): Observable<any> {
-    const path = join(__dirname, '../browser/assets/', this.prefix, `${lang}${this.suffix}`);
+    const path = join(__dirname, '../browser/assets', this.prefix, `/${lang}${this.suffix}`);
     const data = JSON.parse(readFileSync(path, 'utf8'));
-
+    // ADDED: store the translations in the transfer state:
+    const key = makeStateKey<any>('transfer-translate-' + lang);
+    this.transferState.set(key, data);
     return of(data);
   }
 }
 
-export function translateFSLoaderFactory() {
-  return new TranslateFSLoader();
+export function translateFSLoaderFactory(transferState: TransferState) {
+  return new TranslateFSLoader(transferState);
 }
