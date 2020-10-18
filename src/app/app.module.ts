@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
-import { I18nModule } from './i18n/i18n.module';
 import { SelectLanguageComponent } from './select-language/select-language.component';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { SelectLanguageComponent } from './select-language/select-language.compo
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    I18nModule
+    TranslateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

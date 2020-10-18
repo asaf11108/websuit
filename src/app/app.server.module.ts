@@ -1,3 +1,4 @@
+import { I18nServerModule } from './i18n/i18n.server.module';
 import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 
@@ -8,6 +9,7 @@ import { AppComponent } from './app.component';
   imports: [
     AppModule,
     ServerModule,
+    I18nServerModule
   ],
   bootstrap: [AppComponent],
 })

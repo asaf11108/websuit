@@ -25,7 +25,7 @@ import { TranslateCacheModule, TranslateCacheSettings, TranslateCacheService } f
   ],
   exports: [TranslateModule]
 })
-export class I18nModule {
+export class I18nBrowserModule {
   constructor(
     translate: TranslateService,
     translateCacheService: TranslateCacheService
