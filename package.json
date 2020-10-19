@@ -29,6 +29,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.15.2",
+    "ngx-cookie-service": "^10.1.1",
     "ngx-translate-cache": "^9.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

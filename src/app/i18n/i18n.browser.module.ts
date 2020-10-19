@@ -5,6 +5,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateCacheModule, TranslateCacheSettings, TranslateCacheService } from 'ngx-translate-cache';
 import { Observable, of } from 'rxjs';
 import { makeStateKey, TransferState } from '@angular/platform-browser';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   imports: [
@@ -25,16 +26,24 @@ import { makeStateKey, TransferState } from '@angular/platform-browser';
       cacheMechanism: 'Cookie'
     })
   ],
-  exports: [TranslateModule]
+  exports: [TranslateModule],
+  providers: [CookieService]
 })
 export class I18nBrowserModule {
   constructor(
     translate: TranslateService,
-    translateCacheService: TranslateCacheService
+    translateCacheService: TranslateCacheService,
+    cookieService: CookieService
   ) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let browserLang = urlParams.get('lang');
+    if (browserLang) {
+      cookieService.set('lang', browserLang);
+    }
     translateCacheService.init();
     translate.addLangs(['en', 'he']);
-    const browserLang = translateCacheService.getCachedLanguage() || translate.getBrowserLang();
+    browserLang = translateCacheService.getCachedLanguage() || translate.getBrowserLang();
     translate.use(browserLang.match(/en|he/) ? browserLang : 'en');
   }
 }
@@ -61,8 +70,6 @@ export class TranslateBrowserLoader implements TranslateLoader {
   public getTranslation(lang: string): Observable<any> {
     const key = makeStateKey<any>('transfer-translate-' + lang);
     const data = this.transferState.get(key, null);
-    console.log('data', data)
-    console.log('transferState', this.transferState)
     
     // First we are looking for the translations in transfer-state, if none found, http load as fallback
     return data
