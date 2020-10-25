@@ -27,6 +27,7 @@
     "@nguniversal/express-engine": "^10.1.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "express": "^4.15.2",
     "ngx-cookie-service": "^10.1.1",
