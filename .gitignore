@@ -13,6 +13,9 @@
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
+*.pem
+*.key
+*.crt
 
 # IDEs and editors
 /.idea

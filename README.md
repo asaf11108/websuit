@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [Implementing multi-language Angular applications rendered on a server (SSR)](https://indepth.dev/implementing-multi-language-angular-applications-rendered-on-server/).
 
+## Add ssl
+
+[Create your first website using angular 6 -- Part 12 -- Local Development SSL](https://www.youtube.com/watch?v=2vbWjzROtUc&ab_channel=AdMISTERSTUDIOs).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
