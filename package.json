@@ -11,7 +11,8 @@
     "dev:ssr": "ng run websuit:serve-ssr",
     "serve:ssr": "node dist/websuit/server/main.js",
     "build:ssr": "ng build --prod && ng run websuit:server:production",
-    "prerender": "ng run websuit:prerender"
+    "prerender": "ng run websuit:prerender",
+    "heroku-postbuild": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
