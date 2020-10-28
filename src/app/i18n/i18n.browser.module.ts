@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateCacheModule, TranslateCacheSettings, TranslateCacheService } from 'ngx-translate-cache';
@@ -9,7 +9,6 @@ import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   imports: [
-    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -26,7 +25,6 @@ import { CookieService } from 'ngx-cookie-service';
       cacheMechanism: 'Cookie'
     })
   ],
-  exports: [TranslateModule],
   providers: [CookieService]
 })
 export class I18nBrowserModule {

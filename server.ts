@@ -20,6 +20,11 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), 'dist/websuit/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
+  const domino = require("domino");
+  const win = domino.createWindow(distFolder + indexHtml);
+  global["window"] = win;
+  global["document"] = win.document;
+
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule,
