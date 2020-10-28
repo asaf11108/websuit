@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { SelectLanguageComponent } from './select-language/select-language.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularTiltModule } from 'angular-tilt';
-import { WINDOW_PROVIDERS } from "./services/windows.service";
 
 
 @NgModule({
@@ -19,7 +18,7 @@ import { WINDOW_PROVIDERS } from "./services/windows.service";
     AngularTiltModule,
     TranslateModule
   ],
-  providers: [WINDOW_PROVIDERS],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
