@@ -508,7 +508,7 @@ section {
         z-index: 0;
     }
 }
-@-webkit-keyframes anim-effct-slide {
+@keyframes anim-effct-slide {
     0% {
         box-shadow: 0 0 0 8px $color_bon_jour_approx;
         opacity: 1;
@@ -536,7 +536,7 @@ section {
         opacity: 0;
     }
 }
-@-webkit-keyframes anim-effct-testi-back {
+@keyframes anim-effct-testi-back {
     0% {
         box-shadow: 0 0 0 8px $color_cararra_11_approx;
         opacity: 1;
@@ -564,7 +564,7 @@ section {
         opacity: 1;
     }
 }
-@-webkit-keyframes anim-effct-slide1 {
+@keyframes anim-effct-slide1 {
     0% {
         box-shadow: 0 0 0 8px rgba(232, 232, 232, 0.1);
         opacity: 1;
@@ -795,7 +795,7 @@ section {
         }
     }
 }
-@-webkit-keyframes anim-effect-front {
+@keyframes anim-effect-front {
     0% {
         box-shadow: 0 0 0 15px $color_bon_jour_approx;
         opacity: 1;
@@ -823,7 +823,7 @@ section {
         opacity: 0;
     }
 }
-@-webkit-keyframes anim-effect-back {
+@keyframes anim-effect-back {
     0% {
         box-shadow: 0 0 0 30px $color_cararra_approx;
         opacity: 1;
@@ -1464,7 +1464,7 @@ section {
         opacity: 0.0;
     }
 }
-@-webkit-keyframes  ripple1 {
+@keyframes  ripple1 {
     0% {
         -ms-transform:  scale(5.5); /* IE 9 */
         -webkit-transform:  scale(5.5); /* Safari */
@@ -1490,7 +1490,7 @@ section {
         transform: scale(5.5);
     }
 }
-@-webkit-keyframes ripple2 {
+@keyframes ripple2 {
     0% {
         -ms-transform:  scale(3.5); /* IE 9 */
         -webkit-transform:  scale(3.5); /* Safari */
@@ -1514,7 +1514,7 @@ section {
         transform: scale(3.5);
     }
 }
-@-webkit-keyframes  ripple3 {
+@keyframes  ripple3 {
     0% {
         -ms-transform:  scale(1.5); /* IE 9 */
         -webkit-transform:  scale(1.5); /* Safari */
