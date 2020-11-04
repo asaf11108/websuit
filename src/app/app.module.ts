@@ -1,3 +1,4 @@
+import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { FeatureComponent } from './feature/feature.component';
 import { AboutComponent } from './about/about.component';
 import { SharedModule } from './shared/shared.module';
@@ -18,7 +19,8 @@ import { IntroComponent } from './intro/intro.component';
     SelectLanguageComponent,
     IntroComponent,
     AboutComponent,
-    FeatureComponent
+    FeatureComponent,
+    HowItWorkComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
