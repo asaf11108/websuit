@@ -44,16 +44,6 @@
   .slide-text {
     margin-top: -15px;
   }
-  .plan-slider,.plan-slider-rtl{
-    .owl-nav{
-      .owl-prev {
-        left: -15px;
-      }
-      .owl-next {
-        right: -15px;
-      }
-    }
-  }
   .faq .faq-row {
     margin-bottom: -28px;
     margin-top: -15px;
@@ -227,11 +217,6 @@
       margin-top: 20px;
     }
   }
-  .testimonil-box {
-    .owl-dots {
-      margin-left: 25%;
-    }
-  }
   .slid-btn{
     img{
       width: 120px;
@@ -247,9 +232,6 @@
   }
   .load i {
     top: 0;
-  }
-  .team-slider .owl-nav {
-    margin-top: 82px;
   }
   .contact-text h3 {
     font-size: 16px;
@@ -445,9 +427,6 @@
       display: none;
     }
   }
-  .testimonil-box .owl-dots {
-    margin-left: 35%;
-  }
   .error-main {
     position: relative;
     .error-font {
@@ -545,14 +524,8 @@
     margin-right: 4px;
     margin-bottom: 10px;
   }
-  .news-slider .owl-nav {
-    margin-top: 30px;
-  }
   .download-img ul {
     text-align: center;
-  }
-  .plan-slider .owl-nav {
-    margin-top: 10px;
   }
   .navbar-nav {
     .nav-item {
@@ -658,10 +631,6 @@
   .blog-text h5 {
     line-height: 1.6;
   }
-  .blog-carousel .owl-dots {
-    position: relative;
-    top: 10px;
-  }
   .blog-sec .blog-list > div + div .blog-item {
     margin-top: 40px;
   }
@@ -743,9 +712,6 @@
   .contact{
     text-align: center;
   }
-  .testimonil-box .owl-dots{
-    width: 100%;
-  }
   .auth-page{
     .mobile-slid{
       margin: 0;
@@ -780,13 +746,6 @@
       margin-bottom: 25px;
     }
   }
-  .testimonil-box {
-    .owl-dots {
-      text-align: center;
-      margin-left: 0;
-      margin-top: -30px !important;
-    }
-  }
   .mobile-slid{
     img{
       margin-bottom: 0;
@@ -803,9 +762,6 @@
   }
   .slide-text {
     text-align: center;
-  }
-  .news-slider .owl-nav {
-    margin-top: 0;
   }
   .chat-box h3 {
     font-size: 18px;
@@ -859,9 +815,6 @@
     position: relative;
     margin-bottom: 80px;
   }
-  .testimonial-slider .owl-item img{
-    margin: 0 auto;
-  }
   .load i {
     width: 500px;
     height: 500px;
@@ -901,13 +854,6 @@
   .testimonial-slider {
     .media-body {
       text-align: center;
-    }
-    .owl-item img {
-      display: block;
-      width: 105px;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 30px;
     }
   }
   .team-profile {
@@ -1435,9 +1381,6 @@
   .blog-sec .blog-list > div + div .blog-item {
     margin-top: 30px;
   }
-  .plan-slider .owl-nav {
-    margin-top: 0;
-  }
   .dropdown .dropdown-toggle {
     margin-top: 0;
   }
@@ -1502,15 +1445,6 @@
   .coming-title {
     margin-top: 50px;
   }
-  .timonial-carousel{
-    &.owl-carousel{
-      button{
-        &.owl-prev{
-          display: none;
-        }
-      }
-    }
-  }
   .mt-35 > div + div {
     margin-top: 50px;
   }
@@ -1550,9 +1484,6 @@
     margin: 5px auto;
   }
   .testimonial-slider {
-    .owl-nav {
-      margin-bottom: 40px;
-    }
     .media-body {
       p {
         font-size: 15px;

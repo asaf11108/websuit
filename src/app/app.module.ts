@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
@@ -16,7 +17,8 @@ import { AngularTiltModule } from 'angular-tilt';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AngularTiltModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

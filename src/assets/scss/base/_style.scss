@@ -115,54 +115,6 @@ ul {
 .theme-bg{
     background: $bg_gradiant;
 }
-.owl-theme{
-    &.owl-carousel{
-        .owl-nav{
-            button{
-                &.owl-next, &.owl-prev{
-                    background-color: $white !important;
-                    padding: 5px 15px !important;
-                    font-size: 18px;
-                    color: $primary_color;
-                }
-            }
-        }
-    }
-    .owl-dots{
-        height: 17px;
-        .owl-dot{
-            span{
-                background-color: $white;
-                border: 1px solid $primary_color;
-            }
-            &.active,&:hover{
-                span{
-                    background: $bg_gradiant;
-                    border: 1px solid $white;
-                }
-            }
-        }
-    }
-    .owl-dots{
-        .owl-dot{
-            span{
-                margin-bottom: 0;
-            }
-        }
-    }
-    &.owl-nav {
-        .owl-dots{
-            .owl-dot{
-                span{
-                    margin-bottom: 0;
-                }
-            }
-        }
-        [class*=owl-]:hover {
-            background: transparent;
-        }
-    }
-}
 .text-black {
     color: $black!important;
 }
@@ -804,18 +756,6 @@ section {
     h4 {
         color: $primary_color;
     }
-    .owl-dots{
-        text-align: left;
-        margin-left: 243px;
-        position: absolute;
-        bottom: 20px;
-        z-index: 99;
-    }
-}
-.testimonial-slider .owl-item img {
-    display: block;
-    width: 105px;
-
 }
 .testi-profile {
     margin: 30px 0 25px;
@@ -1175,38 +1115,6 @@ section {
         vertical-align: middle;
         transition: all 0.5s;
     }
-}
-.theme-bg{
-    &:hover{
-        .plan-slider,.plan-slider-rtl{
-            .owl-prev,.owl-next{
-                transform: translateX(0px);
-                opacity: 1;
-                transition: all 0.3s ease;
-                border-radius: 100%;
-            }
-        }
-    }
-}
-.plan-slider,.plan-slider-rtl{
-    .owl-nav{
-        margin-top: 0;
-        .owl-prev,.owl-next{
-            position: absolute;
-            top: 40%;
-            opacity: 0;
-            transition: all 0.3s ease;
-        }
-        .owl-prev{
-            left: -70px;
-            transform: translateX(150px);
-        }
-        .owl-next{
-            right: -70px;
-            transform: translateX(-150px);
-        }
-    }
-
 }
 .price-plan {
     padding: 30px 10px 30px;
