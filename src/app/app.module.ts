@@ -1,3 +1,4 @@
+import { AboutComponent } from './about/about.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ import { IntroComponent } from './intro/intro.component';
   declarations: [
     AppComponent,
     SelectLanguageComponent,
-    IntroComponent
+    IntroComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
