@@ -39,8 +39,8 @@
     "ngx-page-scroll": "^7.0.3",
     "ngx-page-scroll-core": "^7.0.3",
     "ngx-translate-cache": "^9.0.2",
-    "rxjs": "~6.6.0",
     "swiper": "^4.5.0",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

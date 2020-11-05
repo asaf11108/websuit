@@ -58,14 +58,6 @@ $(document).ready(function(){
         }, 600);
         return false;
     });
-    /*------------------------
-     How it Work
-     --------------------------*/
-    $(".work-link").on('click', function(event) {
-        $('.nav-item').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-
     
     /*-----------------------
      Team
@@ -93,46 +85,6 @@ $(document).ready(function(){
     $("#mymenu li a").on('click', function(event){
         $('a.nav-link').removeClass('active');
         $(this).addClass('active');
-    });
-
-    /*----------------------
-     Screen slider
-     -------------------------*/
-    var swiper = new Swiper('.swiper-screenshots-container-1', {
-        effect: 'coverflow',
-        grabCursor: true,
-        initialSlide: 2,
-        centeredSlides: true,
-        loop: true,
-        spaceBetween: 0,
-        slidesPerView: 4,
-        pagination: false,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1.43,
-            slideShadows: false,
-        },
-        autoplay: {
-            delay: 5000,
-        },
-        breakpoints: {
-            360: {
-                slidesPerView: 1,
-                coverflowEffect: {
-                    depth: 50,
-                    modifier: 0,
-                },
-            },
-            640: {
-                slidesPerView: 3,
-                coverflowEffect: {
-                    depth: 80,
-                    modifier: 0,
-                },
-            }
-        }
     });
 
 });
