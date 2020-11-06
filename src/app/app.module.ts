@@ -23,6 +23,7 @@ import { IntroComponent } from './intro/intro.component';
     FeatureComponent,
     HowItWorkComponent,
     ScreenshotComponent
+    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
