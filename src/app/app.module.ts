@@ -1,3 +1,4 @@
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ScreenshotComponent } from './screenshot/screenshot.component';
 import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { FeatureComponent } from './feature/feature.component';
@@ -22,8 +23,8 @@ import { IntroComponent } from './intro/intro.component';
     AboutComponent,
     FeatureComponent,
     HowItWorkComponent,
-    ScreenshotComponent
-    
+    ScreenshotComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
