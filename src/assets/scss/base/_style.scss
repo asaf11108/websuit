@@ -432,7 +432,7 @@ section {
     position: absolute;
     top: 41%;
     left: -25px;
-    img {
+    span {
         animation: movebounce 2.1s linear infinite;
     }
 }
@@ -462,7 +462,7 @@ section {
     position: absolute;
     top: 56%;
     right: 25px;
-    img {
+    figure {
         animation: moveleftbounce 2.1s linear infinite;
     }
 }
@@ -477,8 +477,8 @@ section {
         content: '';
         width: 110px;
         height: 110px;
-        top: 26%;
-        left: 26%;
+        top: 28%;
+        left: 28%;
         border-radius: 50%;
         z-index: 0;
     }
@@ -500,8 +500,8 @@ section {
         box-shadow: 0 0 0 80px rgba(232, 232, 232, 0.1);
         position: absolute;
         content: '';
-        width: 110px;
-        height: 110px;
+        width: 115px;
+        height: 115px;
         top: 26%;
         left: 26%;
         border-radius: 50%;
