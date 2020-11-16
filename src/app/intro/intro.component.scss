@@ -1,5 +1,28 @@
 #home {
+    .logo-express {
+        margin-top: 63px;
+        display: block;
+        font: 25px helvetica neue,open sans,sans-serif;
+        font-weight: 100;
+        color: #444;
+        background-color: #eee;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
     .add-hue {
         filter: hue-rotate(120deg);
+    }
+    .emoji {
+        width: 15%;
+    }
+    .awesome-figure {
+        overflow:hidden; /*hide bounds of image */
+        margin:0;
+        padding: 0 10px;
+        background-color: #eee;
+        border-radius: 5px;
+        img {
+            margin: -32% 0;
+        }
     }
 }
