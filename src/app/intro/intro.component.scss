@@ -28,6 +28,12 @@
         img {
             width: 43px;
             margin-right: 10px;
+            @media(max-width: 1199px){
+                transform: scale(0.8);
+            }
+        }
+        h4 {
+            text-align: left;
         }
     }
 }
