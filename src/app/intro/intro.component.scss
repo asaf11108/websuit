@@ -22,4 +22,12 @@
             margin: -32% 0;
         }
     }
+    .check-item {
+        display: flex;
+        align-items: center;
+        img {
+            width: 43px;
+            margin-right: 10px;
+        }
+    }
 }
