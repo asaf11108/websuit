@@ -1,8 +1,5 @@
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ScreenshotComponent } from './screenshot/screenshot.component';
-import { HowItWorkComponent } from './how-it-work/how-it-work.component';
-import { FeatureComponent } from './feature/feature.component';
-import { AboutComponent } from './about/about.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,9 +17,6 @@ import { IntroComponent } from './intro/intro.component';
     AppComponent,
     SelectLanguageComponent,
     IntroComponent,
-    AboutComponent,
-    FeatureComponent,
-    HowItWorkComponent,
     ScreenshotComponent,
     ContactUsComponent
   ],
