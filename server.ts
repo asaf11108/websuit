@@ -8,13 +8,16 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 import * as cookieParser from 'cookie-parser';
+import * as bodyParser from 'body-parser';
 import * as  compression from 'compression';
+import * as  nodemailer from 'nodemailer';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
 
   server.use(cookieParser());
+  server.use(bodyParser.json()); 
   server.use(compression());
   
   const distFolder = join(process.cwd(), 'dist/websuit/browser');
@@ -43,6 +46,28 @@ export function app(): express.Express {
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+  });
+
+  server.post('/contact-us', (req, res) => {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'webking.online.info@gmail.com',
+        pass: 'webking123'
+      }
+    });
+    
+    const mailOptions = {
+      from: 'webking.online.info@gmail.com',
+      to: ['asaf11108@gmail.com', 'leon.good.life@gmail.com '],
+      subject: 'Email from WebKing',
+      text: `Name: ${req.body.name}\n\nMessage: ${req.body.message}`
+    };
+    
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) res.json(error);
+      else res.json(info);
+    });
   });
 
   return server;

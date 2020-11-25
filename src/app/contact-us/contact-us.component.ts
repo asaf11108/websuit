@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
@@ -10,7 +11,7 @@ export class ContactUsComponent implements OnInit {
 
   contactForm: FormGroup;
   
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private httpClient: HttpClient) { }
 
   // Form Validator
   ngOnInit() {
@@ -19,6 +20,10 @@ export class ContactUsComponent implements OnInit {
       email: ['', Validators.email],
       message: ['', Validators.required]
     })
+  }
+
+  onSubmit(contactData) {
+    this.httpClient.post('contact-us', contactData).subscribe(console.log);
   }
 
 }

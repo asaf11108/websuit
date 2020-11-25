@@ -11,7 +11,7 @@
             <div class="section-title">
                <h2 class="text-white">Get In Touch</h2>
             </div>
-            <form class="auth-form">
+            <form class="auth-form" [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
                <div class="form-group">
                   <label for="exampleInputName1">Name</label>
                   <i class="fa fa-user"></i>
