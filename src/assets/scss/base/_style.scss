@@ -875,52 +875,6 @@ section {
     text-align: center;
     top: 0;
 }
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.swiper-gallery-container {
-    text-align: center;
-    font-size: 18px;
-    background: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-container-3d {
-    .swiper-slide-shadow-left {
-        background-image: none;
-    }
-    .swiper-slide-shadow-right {
-        background-image: none;
-    }
-}
-.swiper-pagination-custom {
-    position: relative;
-    margin-top: 55px;
-}
-.swiper-pagination-fraction {
-    position: relative;
-    margin-top: 55px;
-}
-#slider {
-    .swiper-pagination-custom {
-        position: absolute;
-        margin-top: 30px;
-        bottom: 30px;
-    }
-    .swiper-pagination-fraction {
-        position: absolute;
-        margin-top: 30px;
-        bottom: 30px;
-    }
-    &.swiper-container-horizontal > .swiper-pagination-bullets {
-        position: absolute;
-        margin-top: 30px;
-        bottom: 30px;
-    }
-}
 /*=====================
     07.screenshots section ends
 ==========================*/
@@ -1871,15 +1825,6 @@ li.nav-item.dropdown {
 }
 .about-chat .col-md-3:last-child .chat-box {
     border-right: none;
-}
-.swiper-slide img {
-    width: 100%;
-    margin-top: -25px;
-    margin-bottom: -25px;
-}
-.swiper-container-horizontal > .swiper-pagination-bullets {
-    position: relative;
-    margin-top: 55px;
 }
 .animation-circle{
     &.absolute{

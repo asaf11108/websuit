@@ -42,7 +42,6 @@
     "ngx-translate-cache": "^9.0.2",
     "nodemailer": "^6.4.16",
     "rxjs": "~6.6.0",
-    "swiper": "^4.5.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

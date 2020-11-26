@@ -2,7 +2,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ScreenshotComponent } from './screenshot/screenshot.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
 import { SelectLanguageComponent } from './select-language/select-language.component';
@@ -32,4 +32,10 @@ import { IntroComponent } from './intro/intro.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(@Optional() @SkipSelf() parentModule: AppModule) {
+    if (parentModule) {
+        throw new Error('AppModule is already loaded. Import it in the AppModule only');
+    }
+}
+ }
