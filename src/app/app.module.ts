@@ -1,5 +1,5 @@
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ScreenshotComponent } from './screenshot/screenshot.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
@@ -17,7 +17,7 @@ import { IntroComponent } from './intro/intro.component';
     AppComponent,
     SelectLanguageComponent,
     IntroComponent,
-    ScreenshotComponent,
+    PortfolioComponent,
     ContactUsComponent
   ],
   imports: [
