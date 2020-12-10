@@ -14,7 +14,11 @@
             <div class="monitor-container">
                <img class="monitor" src="assets/images-new/monitor.png" alt="Monitor">
                <div class="slider">
-                  <img src="assets/images-new/elal2.jpg">
+                  <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="images">
+                     <ngu-tile *nguCarouselDef="let item">
+                       <img class="tile" [src]="item"/>
+                     </ngu-tile>
+                   </ngu-carousel>
                </div>
             </div>
          </div>
