@@ -11,6 +11,7 @@ export class PortfolioComponent implements OnInit {
   images = [
     'assets/images-new/elal1.jpg',
     'assets/images-new/elal2.jpg',
+    'assets/images-new/elal3.jpg',
   ];
   public carouselTileConfig: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
