@@ -8,11 +8,18 @@ import { NguCarouselConfig } from '@ngu/carousel';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  images = [
-    'assets/images-new/elal1.jpg',
-    'assets/images-new/elal2.jpg',
-    'assets/images-new/elal3.jpg',
-  ];
+  private static _porfoliosImages = {
+    elal: [
+      'assets/images-new/elal1.jpg',
+      'assets/images-new/elal2.jpg',
+      'assets/images-new/elal3.jpg'
+    ],
+    proofpoint: [
+      'assets/images-new/casb1.jpg',
+      'assets/images-new/casb2.jpg',
+      'assets/images-new/observeit1.jpg',
+    ]
+  };
   public carouselTileConfig: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
     speed: 900,
@@ -25,10 +32,20 @@ export class PortfolioComponent implements OnInit {
     load: 2,
     RTL: true
   };
+  selectedImages: string[];
 
   constructor() { }
 
   ngOnInit() {
+    this.showPortfolio('elal');
   }
 
+  showPortfolio(portfolio: string) {
+    this.selectedImages = PortfolioComponent._porfoliosImages[portfolio];
+  }
+
+  setAutoplay(isAutoplay: boolean) {
+    console.log("🚀 ~ file: portfolio.component.ts ~ line 48 ~ PortfolioComponent ~ setAutoplay ~ isAutoplay", isAutoplay)
+    this.carouselTileConfig = { ...this.carouselTileConfig, loop: isAutoplay };
+  }
 }

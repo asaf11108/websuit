@@ -13,8 +13,12 @@
          <div class="col-lg-8">
             <div class="monitor-container">
                <img class="monitor" src="assets/images-new/monitor.png" alt="Monitor">
-               <div class="slider">
-                  <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="images">
+               <div class="slider" (mouseenter)="setAutoplay(false)"
+               (mouseleave)="setAutoplay(true)">
+                  <ngu-carousel
+                     #myCarousel
+                     [inputs]="carouselTileConfig"
+                     [dataSource]="selectedImages">
                      <ngu-tile *nguCarouselDef="let item">
                        <img class="tile" [src]="item"/>
                      </ngu-tile>
@@ -22,9 +26,14 @@
                </div>
             </div>
          </div>
-         <div class="col-lg-4">
-
-         </div>
+         <ul class="col-lg-4">
+            <li (click)="showPortfolio('elal')">
+               Elal
+            </li>
+            <li (click)="showPortfolio('proofpoint')">
+               Proofpoint
+            </li>
+         </ul>
       </div>
    </div>
 </section>
