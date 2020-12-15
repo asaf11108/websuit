@@ -18,6 +18,11 @@ export class PortfolioComponent implements OnInit {
       'assets/images-new/casb1.jpg',
       'assets/images-new/casb2.jpg',
       'assets/images-new/observeit1.jpg',
+    ],
+    niagara: [
+      'assets/images-new/niagara1.jpg',
+      'assets/images-new/niagara2.jpg',
+      'assets/images-new/niagara3.jpg',
     ]
   };
   public carouselTileConfig: NguCarouselConfig = {
