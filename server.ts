@@ -59,7 +59,7 @@ export function app(): express.Express {
     
     const mailOptions = {
       from: 'webking.online.info@gmail.com',
-      to: ['asaf11108@gmail.com', 'leon.good.life@gmail.com '],
+      to: ['asaf11108@gmail.com', 'leon.good.life@gmail.com'],
       subject: 'Email from WebKing',
       text: `Name: ${req.body.name}\n\nEmail: ${req.body.email}\n\nMessage: ${req.body.message}`
     };
