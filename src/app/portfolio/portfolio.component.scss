@@ -22,3 +22,30 @@
         }
     }
 }
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(max-width: 991px) {
+        flex-direction: row;
+    }
+    .logo {
+        text-align: center;
+        margin: 10% 0;
+        img {
+            width: 80%;
+            cursor: pointer;
+            transition: 200ms ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .logo-niagara {
+        @extend .logo;
+        img {
+            width: 70%;
+        }
+    }
+}
