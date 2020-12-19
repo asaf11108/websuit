@@ -47,7 +47,7 @@ body {
 h1 {
     line-height: 1.4em;
     font-size: 42px;
-    color: hsla(0, 0%, 100%, 0.85);
+    color: #fff;
 }
 h2 {
     line-height: 28px;
@@ -359,7 +359,7 @@ section {
 }
 .navbar-nav {
     .nav-item .nav-link {
-        color: rgba(255, 255, 255, 0.60);
+        color: #fff;
     }
     > li.dropdown {
         position: relative;
@@ -367,7 +367,7 @@ section {
     a{
         &.nav-link{
             &.active, &:hover {
-                color: $white;
+                color: rgba(255, 255, 255, 0.60);
             }
         }
     }
@@ -407,7 +407,7 @@ section {
     margin-top: -25px;
     h4 {
         font-size: 18px;
-        color: #ffcaca;
+        color: #fff;
         font-weight: 400;
     }
 }
