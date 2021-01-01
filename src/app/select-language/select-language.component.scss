@@ -1,6 +1,10 @@
 .lang-container {
     display: flex;
     margin-left: 2rem;
+    @media(max-width: 991px) {
+        margin-left: 0;
+        justify-content: flex-end;
+    }
     .lang {
         text-transform: uppercase;
         letter-spacing: 0.05rem;
@@ -11,6 +15,9 @@
         &:last-child {
             padding-right: 0;
             border-right: unset;
+        }
+        &.active, &:hover {
+            color: rgba(255, 255, 255, 0.60);
         }
     }
 }
