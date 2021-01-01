@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   public darkHeader: boolean = false;  
   public menuItems: any[];
+  public isMenuCollapsed = true;
   
   // Inject Document object
   constructor(

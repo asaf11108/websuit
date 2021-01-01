@@ -15,31 +15,7 @@ $(document).ready(function(){
     /*----------------------------------------
      mobile menu nav click hide collapse
      ----------------------------------------*/
-    var mobile_menu = $( window ).width();
-    if(mobile_menu < 991){
-        $("nav a.nav-link").on('click', function(event) {
-            if(!$(this).hasClass('dropdown-toggle')){
-
-                console.log('click');
-                $(".navbar-collapse").collapse('hide');
-            }
-
-        });
-    }
-
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        });
-    }
+    
 
 
     /*------------------------

@@ -1,3 +1,4 @@
+import { SelectLanguageComponent } from './../select-language/select-language.component';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
@@ -5,6 +6,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   exports: [
@@ -15,11 +17,13 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
   imports: [
     CommonModule,
     NgxPageScrollCoreModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgbModule
   ],
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SelectLanguageComponent
   ],
   providers: []
 })

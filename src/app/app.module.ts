@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
-import { SelectLanguageComponent } from './select-language/select-language.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularTiltModule } from 'angular-tilt';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,7 +15,6 @@ import { NguCarouselModule } from '@ngu/carousel';
 @NgModule({
   declarations: [
     AppComponent,
-    SelectLanguageComponent,
     IntroComponent,
     PortfolioComponent,
     ContactUsComponent

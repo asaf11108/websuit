@@ -1,0 +1,8 @@
+<div class="lang-container">
+  <span
+    *ngFor="let lang of translate.getLangs()"
+    (click)="translate.use(lang)"
+    class="lang">
+    {{ lang }}
+  </span>
+</div>

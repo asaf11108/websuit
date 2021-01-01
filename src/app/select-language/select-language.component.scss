@@ -1,0 +1,16 @@
+.lang-container {
+    display: flex;
+    margin-left: 2rem;
+    .lang {
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: #fff;
+        cursor: pointer;
+        border-right: 1px solid #fff;
+        padding: 0 0.5rem;
+        &:last-child {
+            padding-right: 0;
+            border-right: unset;
+        }
+    }
+}
