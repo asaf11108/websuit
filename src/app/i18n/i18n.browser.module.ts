@@ -40,9 +40,9 @@ export class I18nBrowserModule {
       cookieService.set('lang', browserLang);
     }
     translateCacheService.init();
-    translate.addLangs(['en', 'he']);
+    translate.addLangs(['en', 'th']);
     browserLang = translateCacheService.getCachedLanguage() || translate.getBrowserLang();
-    translate.use(browserLang.match(/en|he/) ? browserLang : 'en');
+    translate.use(browserLang.match(/en|th/) ? browserLang : 'en');
   }
 }
 

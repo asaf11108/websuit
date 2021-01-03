@@ -20,10 +20,10 @@ import { Observable, of } from 'rxjs';
 })
 export class I18nServerModule {
   constructor(translate: TranslateService, @Inject(REQUEST) req: Request) {
-    translate.addLangs(['en', 'he']);
+    translate.addLangs(['en', 'th']);
 
-    const language: 'en' | 'he' = req.query.lang || req.cookies.lang || 'en';
-    translate.use(language.match(/en|he/) ? language : 'en');
+    const language: 'en' | 'th' = req.query.lang || req.cookies.lang || 'en';
+    translate.use(language.match(/en|th/) ? language : 'en');
   }
 }
 
