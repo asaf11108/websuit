@@ -1,5 +1,11 @@
 {
   "introduction": "introduction",
   "portfolio": "portfolio",
-  "contactUs": "contact us"
+  "contactUs": "contact us",
+  "introTitle": "The best way to build web applications is with",
+  "introPoint1": "Making your website responsive for all devices.",
+  "introPoint2": "Making your website accessible to everyone.",
+  "introPoint3": "The hottest frontend frameworks available.",
+  "introPoint4": "Reliable server and preferred database."
+
 }
