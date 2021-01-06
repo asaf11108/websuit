@@ -7,19 +7,22 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   exports: [
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    NgbModule
+    NgbModule,
+    TranslateModule
   ],
   imports: [
     CommonModule,
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
-    NgbModule
+    NgbModule,
+    TranslateModule
   ],
   declarations: [
     HeaderComponent,

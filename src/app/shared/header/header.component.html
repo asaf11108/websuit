@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="mainmenu" [ngbCollapse]="isMenuCollapsed" >
       <ul class="navbar-nav ml-auto" id="mymenu">
         <li class="nav-item ">
-          <a class="nav-link" href="#home" [pageScrollOffset]="75" pageScroll>introduction</a>
+          <a class="nav-link" href="#home" [pageScrollOffset]="75" pageScroll>{{'introduction' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio" [pageScrollOffset]="75" pageScroll>portfolio</a>
+          <a class="nav-link" href="#portfolio" [pageScrollOffset]="75" pageScroll>{{'portfolio' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact" [pageScrollOffset]="75" pageScroll>contact us</a>
+          <a class="nav-link" href="#contact" [pageScrollOffset]="75" pageScroll>{{'contactUs' | translate}}</a>
         </li>
         <li class="nav-item">
           <select-language class="nav-link"></select-language>

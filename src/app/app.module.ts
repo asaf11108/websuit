@@ -20,7 +20,6 @@ import { IntroComponent } from './intro/intro.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
-    TranslateModule,
     SharedModule,
     ReactiveFormsModule,
     FormsModule

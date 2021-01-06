@@ -1,3 +1,5 @@
 {
-    "hello": "Hello"
-  }
+  "introduction": "introduction",
+  "portfolio": "portfolio",
+  "contactUs": "contact us"
+}
