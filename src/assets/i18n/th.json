@@ -7,5 +7,21 @@
     "introPoint2": "ทำให้ทุกคนสามารถเข้าถึงเว็บไซต์ของคุณได้",
     "introPoint3": "เฟรมเวิร์กส่วนหน้าที่ร้อนแรงที่สุดที่มีอยู่",
     "introPoint4": "เซิร์ฟเวอร์ที่เชื่อถือได้และฐานข้อมูลที่ต้องการ",
-    "portfolioTitle": "งานของพวกเรา"
+    "portfolioTitle": "งานของพวกเรา",
+    "getInTouch": "ได้รับการติดต่อ",
+    "name": "ชื่อ",
+    "placeholderName": "ชื่อผู้ใช้",
+    "requiredName": "ต้องระบุชื่อ",
+    "email": "อีเมล์",
+    "requiredEmail": "อีเมลไม่ถูกต้อง",
+    "yourMessage": "ข้อความของคุณ",
+    "requiredMessage": "ต้องระบุข้อความ",
+    "sendMessage": "ส่งข้อความ",
+    "contactInfo": "ข้อมูลติดต่อ",
+    "contactInfoSubtitle": "อย่าลังเลที่จะติดต่อเราทางโทรศัพท์หรืออีเมลและเราจะติดต่อกลับโดยเร็วที่สุด",
+    "location": "สถานที่",
+    "locationAddress": "เชียงใหม่ประเทศไทย",
+    "callUs": "โทรหาเรา",
+    "emailUs": "ส่งอีเมลถึงเรา",
+    "copyright": "ลิขสิทธิ์โดย WebKing Technologies"
 }

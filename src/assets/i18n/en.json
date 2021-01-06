@@ -7,5 +7,21 @@
   "introPoint2": "Making your website accessible to everyone.",
   "introPoint3": "The hottest frontend frameworks available.",
   "introPoint4": "Reliable server and preferred database.,",
-  "portfolioTitle": "Our Work"
+  "portfolioTitle": "Our Work",
+  "getInTouch": "Get In Touch",
+  "name": "Name",
+  "placeholderName": "User name",
+  "requiredName": "Name is required",
+  "email": "Email",
+  "requiredEmail": "Invalid Email",
+  "yourMessage": "Your message",
+  "requiredMessage": "Message is required",
+  "sendMessage": "Send Message",
+  "contactInfo": "Contact Info",
+  "contactInfoSubtitle": "Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.",
+  "location": "Location",
+  "locationAddress": "Chiang Mai, Thailand",
+  "callUs": "Call Us",
+  "emailUs": "Email Us",
+  "copyright": "Copyright by WebKing technologies"
 }
