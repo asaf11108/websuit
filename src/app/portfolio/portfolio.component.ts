@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { NguCarouselConfig } from '@ngu/carousel';
+
+interface  Porfolio {
+  url: string;
+  images: string[]
+}
 
 
 @Component({
@@ -8,36 +12,33 @@ import { NguCarouselConfig } from '@ngu/carousel';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  private static _porfoliosImages = {
-    elal: [
-      'assets/images-new/elal1.jpg',
-      'assets/images-new/elal2.jpg',
-      'assets/images-new/elal3.jpg'
-    ],
-    proofpoint: [
-      'assets/images-new/casb1.jpg',
-      'assets/images-new/casb2.jpg',
-      'assets/images-new/observeit1.jpg',
-    ],
-    niagara: [
-      'assets/images-new/niagara1.jpg',
-      'assets/images-new/niagara2.jpg',
-      'assets/images-new/niagara3.jpg',
-    ]
-  };
-  public carouselTileConfig: NguCarouselConfig = {
-    grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
-    speed: 900,
-    interval: { timing: 1500, initialDelay: 1000 },
-    animation: 'lazy',
-    point: {
-      visible: true
+  private static _porfoliosImages: { [company: string]: Porfolio } = {
+    elal: {
+      url: 'https://www.elal.com/',
+      images: [
+        'assets/images-new/elal1.jpg',
+        'assets/images-new/elal2.jpg',
+        'assets/images-new/elal3.jpg'
+      ]
     },
-    loop: true,
-    load: 2,
-    RTL: true
+    proofpoint: {
+      url: 'https://www.proofpoint.com/us',
+      images: [
+        'assets/images-new/casb1.jpg',
+        'assets/images-new/casb2.jpg',
+        'assets/images-new/observeit1.jpg',
+      ]
+    },
+    niagara: {
+      url: 'https://www.niagaranetworks.com/',
+      images: [
+        'assets/images-new/niagara1.jpg',
+        'assets/images-new/niagara2.jpg',
+        'assets/images-new/niagara3.jpg',
+      ]
+    }
   };
-  selectedImages: string[];
+  selectedPortfolio: Porfolio;
 
   constructor() { }
 
@@ -46,11 +47,6 @@ export class PortfolioComponent implements OnInit {
   }
 
   showPortfolio(portfolio: string) {
-    this.selectedImages = PortfolioComponent._porfoliosImages[portfolio];
-  }
-
-  setAutoplay(isAutoplay: boolean) {
-    console.log("🚀 ~ file: portfolio.component.ts ~ line 48 ~ PortfolioComponent ~ setAutoplay ~ isAutoplay", isAutoplay)
-    this.carouselTileConfig = { ...this.carouselTileConfig, loop: isAutoplay };
+    this.selectedPortfolio = PortfolioComponent._porfoliosImages[portfolio];
   }
 }

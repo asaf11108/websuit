@@ -13,16 +13,16 @@
          <div class="col-lg-8">
             <div class="monitor-container">
                <img class="monitor" src="assets/images-new/monitor.png" alt="Monitor">
-               <div class="slider" (mouseenter)="setAutoplay(false)"
-               (mouseleave)="setAutoplay(true)">
-                  <ngu-carousel
-                     #myCarousel
-                     [inputs]="carouselTileConfig"
-                     [dataSource]="selectedImages">
-                     <ngu-tile *nguCarouselDef="let item">
-                       <img class="tile" [src]="item"/>
-                     </ngu-tile>
-                   </ngu-carousel>
+               <div class="slider">
+                   <ngb-carousel #carousel [interval]="1500" [pauseOnHover]="true" [showNavigationArrows]="false"  [showNavigationIndicators]="false">
+                     <ng-template ngbSlide *ngFor="let img of selectedPortfolio.images">
+                       <a [href]="selectedPortfolio.url" target="_blank" rel="nofollow noopener noreferrer">
+                         <div class="picsum-img-wrapper">
+                           <img [src]="img">
+                         </div>
+                       </a>
+                     </ng-template>
+                   </ngb-carousel>
                </div>
             </div>
          </div>

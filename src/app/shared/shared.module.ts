@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     HeaderComponent,
     FooterComponent,
+    NgbModule
   ],
   imports: [
     CommonModule,

@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularTiltModule } from 'angular-tilt';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IntroComponent } from './intro/intro.component';
-import { NguCarouselModule } from '@ngu/carousel';
 
 
 @NgModule({
@@ -26,8 +25,7 @@ import { NguCarouselModule } from '@ngu/carousel';
     TranslateModule,
     SharedModule,
     ReactiveFormsModule,
-    FormsModule,
-    NguCarouselModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
