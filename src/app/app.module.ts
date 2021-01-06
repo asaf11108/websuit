@@ -6,7 +6,6 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularTiltModule } from 'angular-tilt';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IntroComponent } from './intro/intro.component';
 
@@ -21,7 +20,6 @@ import { IntroComponent } from './intro/intro.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
-    AngularTiltModule,
     TranslateModule,
     SharedModule,
     ReactiveFormsModule,
