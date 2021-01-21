@@ -27,14 +27,8 @@
             </div>
          </div>
          <ul class="col-lg-4 logo-container">
-            <li class="logo" (click)="showPortfolio('elal')">
-               <img src="assets/images-new/elal-logo.png">
-            </li>
-            <li class="logo" (click)="showPortfolio('proofpoint')">
-               <img src="assets/images-new/proofpoint-logo.png">
-            </li>
-            <li class="logo-niagara" (click)="showPortfolio('niagara')">
-               <img src="assets/images-new/niagara-logo.png">
+            <li *ngFor="let company of companies" class="logo" (click)="showPortfolio(company)">
+               <img [src]="getCompanyLogo(company)">
             </li>
          </ul>
       </div>
